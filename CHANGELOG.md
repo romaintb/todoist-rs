@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2024-01-XX
 
 ### Added
-- Initial release of todoist-rs
+- Initial release of todoist-api
 - `TodoistWrapper` struct for API interactions
 - Full CRUD operations for tasks
 - Project and label management

@@ -1,5 +1,5 @@
-//! # Todoist-rs
-//!
+//! # Todoist-api
+//! 
 //! A Rust wrapper for the Todoist REST API v2.
 //!
 //! ## Features
@@ -13,7 +13,7 @@
 //! ## Example
 //!
 //! ```rust,no_run
-//! use todoist_rs::TodoistWrapper;
+//! use todoist_api::TodoistWrapper;
 //!
 //! #[tokio::main]
 //! async fn main() -> Result<(), Box<dyn std::error::Error>> {

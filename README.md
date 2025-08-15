@@ -1,4 +1,4 @@
-# Todoist-rs
+# Todoist-api
 
 A Rust wrapper for the Todoist REST API v2, providing a clean and ergonomic interface for managing tasks, projects, and labels.
 
@@ -18,13 +18,13 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-todoist-rs = "0.1.0"
+todoist-api = "0.1.0"
 ```
 
 ## Quick Start
 
 ```rust
-use todoist_rs::TodoistWrapper;
+use todoist_api::TodoistWrapper;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
