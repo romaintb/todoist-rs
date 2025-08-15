@@ -2,7 +2,7 @@ use anyhow::Result;
 use reqwest::Client;
 use std::collections::HashMap;
 
-use crate::models::{Project, Task, Label};
+use crate::models::{Label, Project, Task};
 
 const TODOIST_API_BASE: &str = "https://api.todoist.com/rest/v2";
 

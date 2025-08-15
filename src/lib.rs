@@ -1,20 +1,20 @@
 //! # Todoist-rs
-//! 
+//!
 //! A Rust wrapper for the Todoist REST API v2.
-//! 
+//!
 //! ## Features
-//! 
+//!
 //! - Async/await support
 //! - Full CRUD operations for tasks
 //! - Project and label management
 //! - Comprehensive error handling with anyhow
 //! - Serde serialization/deserialization
-//! 
+//!
 //! ## Example
-//! 
+//!
 //! ```rust,no_run
 //! use todoist_rs::TodoistWrapper;
-//! 
+//!
 //! #[tokio::main]
 //! async fn main() -> Result<(), Box<dyn std::error::Error>> {
 //!     let todoist = TodoistWrapper::new("your-api-token".to_string());
