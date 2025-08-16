@@ -318,7 +318,7 @@ fn test_clone_functionality() {
     };
 
     let cloned_task = original_task.clone();
-    
+
     assert_eq!(cloned_task.id, original_task.id);
     assert_eq!(cloned_task.content, original_task.content);
     assert_eq!(cloned_task.description, original_task.description);

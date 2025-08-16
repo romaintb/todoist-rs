@@ -99,7 +99,7 @@ mod tests {
         };
 
         let _wrapper: TodoistWrapper = TodoistWrapper::new("test".to_string());
-        
+
         // Test that Result is properly exported
         let _result: Result<()> = Ok(());
     }

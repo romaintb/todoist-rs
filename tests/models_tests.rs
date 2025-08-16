@@ -184,7 +184,7 @@ fn test_duration_creation() {
 #[test]
 fn test_create_task_args_default() {
     let args = CreateTaskArgs::default();
-    
+
     assert_eq!(args.content, "");
     assert!(args.description.is_none());
     assert!(args.project_id.is_none());
@@ -207,7 +207,7 @@ fn test_create_task_args_default() {
 #[test]
 fn test_update_task_args_default() {
     let args = UpdateTaskArgs::default();
-    
+
     assert!(args.content.is_none());
     assert!(args.description.is_none());
     assert!(args.priority.is_none());
@@ -226,7 +226,7 @@ fn test_update_task_args_default() {
 #[test]
 fn test_create_project_args_default() {
     let args = CreateProjectArgs::default();
-    
+
     assert_eq!(args.name, "");
     assert!(args.color.is_none());
     assert!(args.parent_id.is_none());
@@ -237,7 +237,7 @@ fn test_create_project_args_default() {
 #[test]
 fn test_update_project_args_default() {
     let args = UpdateProjectArgs::default();
-    
+
     assert!(args.name.is_none());
     assert!(args.color.is_none());
     assert!(args.is_favorite.is_none());
@@ -247,7 +247,7 @@ fn test_update_project_args_default() {
 #[test]
 fn test_create_label_args_default() {
     let args = CreateLabelArgs::default();
-    
+
     assert_eq!(args.name, "");
     assert!(args.color.is_none());
     assert!(args.order.is_none());
@@ -257,7 +257,7 @@ fn test_create_label_args_default() {
 #[test]
 fn test_update_label_args_default() {
     let args = UpdateLabelArgs::default();
-    
+
     assert!(args.name.is_none());
     assert!(args.color.is_none());
     assert!(args.order.is_none());
@@ -267,7 +267,7 @@ fn test_update_label_args_default() {
 #[test]
 fn test_create_section_args_default() {
     let args = CreateSectionArgs::default();
-    
+
     assert_eq!(args.name, "");
     assert_eq!(args.project_id, "");
     assert!(args.order.is_none());
@@ -276,14 +276,14 @@ fn test_create_section_args_default() {
 #[test]
 fn test_update_section_args_default() {
     let args = UpdateSectionArgs::default();
-    
+
     assert_eq!(args.name, "");
 }
 
 #[test]
 fn test_create_comment_args_default() {
     let args = CreateCommentArgs::default();
-    
+
     assert_eq!(args.content, "");
     assert!(args.task_id.is_none());
     assert!(args.project_id.is_none());
@@ -293,7 +293,7 @@ fn test_create_comment_args_default() {
 #[test]
 fn test_update_comment_args_default() {
     let args = UpdateCommentArgs::default();
-    
+
     assert_eq!(args.content, "");
 }
 

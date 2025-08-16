@@ -40,9 +40,7 @@ impl TestConfig {
 
     /// Get the API token for testing
     pub fn get_api_token(&self) -> String {
-        self.api_token
-            .clone()
-            .unwrap_or_else(|| "test-token-12345".to_string())
+        self.api_token.clone().unwrap_or_else(|| "test-token-12345".to_string())
     }
 
     /// Check if we have a real API token
@@ -118,7 +116,7 @@ mod tests {
     #[test]
     fn test_test_config_methods() {
         let config = TestConfig::new();
-        
+
         assert!(!config.should_run_integration_tests());
         assert!(!config.has_real_api_token());
         assert_eq!(config.get_base_url(), "https://api.todoist.com/rest/v2");

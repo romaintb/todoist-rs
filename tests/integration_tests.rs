@@ -44,9 +44,15 @@ async fn test_task_management_workflow() {
     };
 
     assert_eq!(task_args.content, "Integration test task");
-    assert_eq!(task_args.description, Some("This is a test task for integration testing".to_string()));
+    assert_eq!(
+        task_args.description,
+        Some("This is a test task for integration testing".to_string())
+    );
     assert_eq!(task_args.priority, Some(3));
-    assert_eq!(task_args.labels, Some(vec!["test".to_string(), "integration".to_string()]));
+    assert_eq!(
+        task_args.labels,
+        Some(vec!["test".to_string(), "integration".to_string()])
+    );
     assert_eq!(task_args.due_string, Some("tomorrow".to_string()));
 }
 
