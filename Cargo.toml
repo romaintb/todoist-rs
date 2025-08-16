@@ -21,7 +21,20 @@ reqwest = { version = "0.11", features = ["json"] }
 [dev-dependencies]
 tokio-test = "0.4"
 wiremock = "0.5"
+serde_test = "1.0"
 
 [features]
 default = []
 full = []
+
+[[test]]
+name = "models_tests"
+path = "tests/models_tests.rs"
+
+[[test]]
+name = "wrapper_tests"
+path = "tests/wrapper_tests.rs"
+
+[[test]]
+name = "integration_tests"
+path = "tests/integration_tests.rs"

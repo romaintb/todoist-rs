@@ -8,36 +8,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
-- Initial project setup
-- Basic project structure
+- Complete CRUD operations for all Todoist entities
+- Advanced filtering and pagination support for all endpoints
+- Comprehensive data models for all API entities
+- Section management (create, read, update, delete)
+- Comment system (create, read, update, delete)
+- Enhanced project management with full lifecycle support
+- Enhanced label management with filtering and pagination
+- Advanced task creation and update with all available fields
+- Support for task attachments and file handling
+- User model for collaborator information
+- Flexible argument types for all operations
+- Backward compatibility methods for existing code
 
-## [0.1.0] - 2024-01-XX
+### Changed
+- Renamed library from `todoist-rs` to `todoist-api`
+- Enhanced task creation with comprehensive options
+- Improved error handling and type safety
+- Better API organization with logical grouping
+
+### Removed
+- `TaskDisplay` and `ProjectDisplay` types (moved to consumer responsibility)
+
+## [0.1.0] - 2024-01-01
 
 ### Added
 - Initial release of todoist-api
 - `TodoistWrapper` struct for API interactions
 - Full CRUD operations for tasks
 - Project and label management
-- Comprehensive data models for all Todoist entities
 - Async/await support with Tokio
 - Comprehensive error handling with anyhow
 - Serde serialization/deserialization
-- Helper structs for user-friendly display (`TaskDisplay`, `ProjectDisplay`)
-- Unit tests for core functionality
-- MIT license
-- Comprehensive documentation and examples
-
-### Features
-- Create, read, update, and delete tasks
-- Get all projects and labels
-- Task completion and reopening
-- Project-specific task filtering
-- Duration and due date handling
-- Priority and label support
-
-### Technical Details
-- Built with Rust 2021 edition
-- Uses reqwest for HTTP requests
-- 10-second timeout for API calls
-- Bearer token authentication
-- JSON request/response handling
+- Basic HTTP client with timeout handling
