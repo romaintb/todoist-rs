@@ -1,5 +1,5 @@
 //! # Todoist-api
-//! 
+//!
 //! A Rust wrapper for the Todoist REST API v2.
 //!
 //! ## Features
